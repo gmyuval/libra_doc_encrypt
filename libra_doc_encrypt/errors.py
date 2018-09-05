@@ -1,0 +1,2 @@
+class CypherError(Exception):
+    pass
