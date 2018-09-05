@@ -42,7 +42,7 @@ class Scramble(BaseEncryptor):
         self.text_arr = self.transform(self.encoded_text_arr, self.cypher)
 
 
-class NumberCode(BaseEncryptor):
+class BookCypher(BaseEncryptor):
     def __init__(self, source_file: str, cypher_path: str):
         super().__init__(source_file)
         with open(cypher_path, 'r', encoding='utf-8') as jf:
